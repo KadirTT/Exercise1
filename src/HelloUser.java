@@ -2,9 +2,25 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 	
 public class HelloUser {
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Hello User - How are you? :)");
+	private String userName;
+	
+	public HelloUser(String uName) {
+		userName = uName;
+	}
+	
+	public void greetUser()
+	{
+		System.out.println("Hello " + userName + "!");
+				
+		BufferedReader buffer=new BufferedReader(new InputStreamReader(System.in));
+		try
+		{
+			String line=buffer.readLine();
+		}
+		catch(Exception e)
+		{
+			
+		}
 	}
 
 }
